@@ -143,6 +143,129 @@ body{
 			<div class="item"><div class="emoji">🎶</div><div><div class="label">कीर्तन</div><div class="value">सायं 8:00 बजे</div></div></div>
             <div class="item"><div class="emoji">📅</div><div><div class="label">तिथि</div><div class="value"> 27/03/2026 (शुक्रवार)</div></div></div>
           </div>
+          <div class="address">📍 स्थान – 4th floor, बाबा चित्रु कॉम्प्लेक्स, सेक्टर 52, गुरुग्राम   वज़ीराबाद</div>
+          <p style="margin-top:12px;color:var(--muted)">आपका आगमन हमारे लिए सौभाग्य का विषय होगा। आइए, मिलकर इस शुभ दिन को प्रेम, भक्ति और आनंद से मनाएँ।</p>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">⬇️ और देखें ⬇️</div>
+
+        <!-- Lower image -->
+        <div class="lower-img">
+          <img src="https://i.ibb.co/6RXkrkd4/In-Shot-20260325-192822653.jpg" alt="Event Image">
+
+          <div class="lower-overlay">
+            <div class="invite-text">
+              <div class="line" id="line1"></div>
+              <div class="line delay-1" id="line2"></div>
+            </div>
+            <div style="font-size:13px;color:var(--muted)">✨ 27/03 शुक्रवार </div>
+          </div>
+
+          <div class="petal-wrap" id="petalWrap"></div>
+        </div>
+
+        <div class="actions">
+          <button id="copyText" class="btn">Copy Invite Text</button>
+          <button id="saveImage" class="btn secondary">Download Image</button>
+        </div>
+
+        <div class="footer">सप्रेम आमंत्रण · आयोजक परिवार</div>
+      </div>
+    </div>
+
+    <!-- RSVP Popup -->
+    <div id="rsvpOverlay">
+      <div class="box">
+        <h2 style="margin-top:0;color:#a81f63;font-size:18px">🙏 RSVP</h2>
+        <form id="rsvpForm" style="display:flex;flex-direction:column;gap:12px">
+          <label>
+            Will you come?  
+            <select name="coming" required>
+              <option value="">Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+          <label>
+            Name  
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            How many people?  
+            <select name="count" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="Family">Family</option>
+            </select>
+          </label>
+          <button type="submit" style="background:#a81f63;color:#fff;padding:10px;border:none;border-radius:8px;cursor:pointer;font-weight:700">Done</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thankyouPopup">
+      <div class="box">
+        <h2>🌸 धन्यवाद 🌸</h2>
+        <p>
+          आपकी उपस्थिति हमारे लिए <b>बहुत विशेष</b> है।  
+          हम आपको कार्यक्रम में देखने के लिए उत्साहित हैं! 🙏💐
+        </p>
+      </div>
+    </div>
+
+    <!-- Sorry Popup -->
+    <div id="sorryPopup">
+      <div class="box">
+        <h2>💔 अफसोस</h2>
+        <p>
+          हमें खेद है कि आप इस शुभ अवसर पर नहीं आ पाएंगे।  
+          आपकी कमी हमें अवश्य खलेगी 🙏  
+          फिर भी आपका आशीर्वाद सदा हमारे साथ है 🌸
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>  background:#fff;
+  padding:22px;
+  border-radius:16px;
+  text-align:center;
+  width:85%;max-width:340px;
+  font-family:'Noto Sans Devanagari',sans-serif;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  animation:popIn 0.4s ease;
+}
+#thankyouPopup h2{color:#a81f63;margin-top:0}
+#sorryPopup h2{color:#d11;margin-top:0}
+@keyframes popIn{
+  from{transform:scale(0.8);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Banner -->
+      <div class="banner">
+        <img src="https://i.ibb.co/JjpwfhM9/IMG-20260325-WA0015.jpg" alt="Top Banner">
+      </div>
+
+      <!-- Card -->
+      <div class="card">
+        <h1 class="headline">🌸✨ शुभ लड्डू जन्मोत्सव का आमंत्रण ✨🌸</h1>
+        <p class="subhead">🌸 आप सभी को सादर आमंत्रण है कि इस पावन अवसर पर संगीतमय कीर्तन में अपने परिवार सहित उपस्थिति प्रदान करें 🌸  </p>
+
+        <div class="content">
+          <div class="row">
+
+            <div class="item"><div class="emoji">🎶</div><div><div class="label">भोजन प्रसाद</div><div class="value">सायं 7:00 बजे</div></div></div>
+			<div class="item"><div class="emoji">🎶</div><div><div class="label">कीर्तन</div><div class="value">सायं 8:00 बजे</div></div></div>
+            <div class="item"><div class="emoji">📅</div><div><div class="label">तिथि</div><div class="value"> 27/03/2026 (शुक्रवार)</div></div></div>
+          </div>
           <div class="address">📍 स्थान – बाबा चित्रु कॉम्प्लेक्स, सेक्टर 52, गुरुग्राम   वज़ीराबाद</div>
           <p style="margin-top:12px;color:var(--muted)">आपका आगमन हमारे लिए सौभाग्य का विषय होगा। आइए, मिलकर इस शुभ दिन को प्रेम, भक्ति और आनंद से मनाएँ।</p>
         </div>
